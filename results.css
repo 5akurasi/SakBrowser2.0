@@ -1,0 +1,113 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    padding: 10px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(145deg, #0a2cbd, #5284de);
+    border-radius: 10px;
+}
+
+.name {
+    font-family: cursive;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+}
+
+.search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.inputs {
+    width: 75%;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 2px rgb(241, 241, 241);
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    background: rgb(44, 44, 44);
+    color: white;
+}
+
+.searchbtn {
+    width: 20%;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 2px rgb(241, 241, 241);
+    background: linear-gradient(145deg, rgb(60, 17, 253), rgb(49, 167, 247));
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+}
+
+.searchbtn:hover {
+    background: linear-gradient(145deg, rgb(32, 6, 146), rgb(8, 72, 114));
+}
+
+.results-container {
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.results-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results-container li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgb(33, 33, 33);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.results-container li:hover {
+    background: rgb(44, 44, 44);
+}
+
+.results-container a {
+    color: #5284de;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.results-container p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+@media (max-width: 768px) {
+    .search {
+        width: 80%;
+    }
+    .inputs {
+        width: 65%;
+    }
+    .searchbtn {
+        width: 30%;
+    }
+}
